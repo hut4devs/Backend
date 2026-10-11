@@ -51,3 +51,35 @@ docs/
 - Keep credentials server-side and sensitive personal data off-chain.
 
 Extraction must be deliberate and tested. Do not remove or bypass the canonical implementation until parity is verified.
+
+## Development Setup
+
+### Requirements
+
+- Node.js 24
+- npm 11 or newer
+
+### Install dependencies
+
+```bash
+npm ci
+```
+
+### Validate changes
+
+```bash
+npm run typecheck
+npm test
+npm run build
+npm audit
+```
+
+Or run the type-check, tests, and build together:
+
+```bash
+npm run check
+```
+
+The project uses TypeScript in strict mode and Vitest for automated tests. The GitHub Actions workflow runs the validation checks on pull requests targeting `main` and pushes to `main`.
+
+Commit `package-lock.json` whenever dependencies change. Do not commit secrets, local environment files, or generated build output.
