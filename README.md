@@ -9,6 +9,17 @@ Dedicated authoritative API and domain-services repository. The existing canonic
 - Provider adapters, webhook verification, reconciliation, and audit history.
 - API contracts, observability, deployment, and operational safety.
 
+## Documentation
+
+- [Contributor Guide](docs/CONTRIBUTOR_GUIDE.md)  workflow and contribution safety rules.
+- [Backend Engineering Standard](docs/BACKEND_ENGINEERING_STANDARD.md)  implementation and design standards.
+- [Architecture](docs/ARCHITECTURE.md)  boundaries and system structure.
+- [API Contract](docs/API_CONTRACT.md)  API conventions and endpoint documentation requirements.
+- [Data Model](docs/DATA_MODEL.md)  persistence, data integrity, and schema-change expectations.
+- [Security Standard](docs/SECURITY.md)  authentication, authorization, payments, and sensitive-data handling.
+- [Environment Configuration](docs/ENVIRONMENT_CONFIGURATION.md)  supported environment variables and validation.
+- [Testing and Validation](docs/TESTING_AND_VALIDATION.md)  required checks and testing expectations.
+- [Architecture Decisions](docs/decisions/README.md)  recording durable design decisions.
 ## Target structure
 ```text
 src/

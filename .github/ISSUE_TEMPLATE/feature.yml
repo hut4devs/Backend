@@ -1,0 +1,42 @@
+name: Backend feature
+description: Propose a backend capability or change
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read the [Contributor Guide](https://github.com/hut4devs/Backend/blob/main/docs/CONTRIBUTOR_GUIDE.md), [Architecture](https://github.com/hut4devs/Backend/blob/main/docs/ARCHITECTURE.md), and [Engineering Standard](https://github.com/hut4devs/Backend/blob/main/docs/BACKEND_ENGINEERING_STANDARD.md).
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and intended outcome
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List observable, testable outcomes.
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Domain and architecture boundaries
+      description: Identify API, domain, persistence, identity, payment, or provider impact.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Relevant reference documents
+      description: Link the specific references relevant to this issue.
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Security, data, and rollout considerations
+    validations:
+      required: true

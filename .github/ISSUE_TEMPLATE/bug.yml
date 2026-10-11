@@ -1,0 +1,41 @@
+name: Backend bug
+description: Report incorrect behavior or a regression
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read the [Contributor Guide](https://github.com/hut4devs/Backend/blob/main/docs/CONTRIBUTOR_GUIDE.md), [Testing and Validation](https://github.com/hut4devs/Backend/blob/main/docs/TESTING_AND_VALIDATION.md), and [Security](https://github.com/hut4devs/Backend/blob/main/docs/SECURITY.md).
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps and safe evidence
+      description: Never include secrets, real personal/payment data, or production dumps.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact and affected boundaries
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Relevant reference documents
+      description: Link relevant docs and architectural decisions.
+    validations:
+      required: true
